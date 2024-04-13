@@ -1,0 +1,142 @@
+/* General styles */
+
+html {
+    font-size: 18px;
+    font-family: 'Quattrocento', serif;
+    background-color: #021533;
+    color: #BFCCD9;
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: 'Oswald', serif;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #85B6FF;
+}
+
+main {
+    position: relative;
+    top: 70px;
+}
+
+footer {
+    position: relative;
+    top: 80px;
+    height: 80px;
+    width: 100%;
+    display: block;
+    align-content: center;
+}
+
+/* Header styles */
+
+header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    background-color: #021533;
+}
+
+header #logo {
+    font-family: 'Oswald';
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    list-style-type: none;
+}
+
+header li {
+    margin: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: #BFCCD9;
+    transition: letter-spacing linear 0.3s;
+}
+
+header a:hover {
+    color: #BE9C37;
+    letter-spacing: 2px;
+}
+
+/* About section styles */
+
+#about {
+    background-image: url('../images/about-background.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-items:center;
+    align-content: center;
+}
+
+#about::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background-color: #021533;
+    opacity: 0.5;
+}
+
+#about * {
+    position: relative;
+}
+
+#about-text {
+    width: 100%;
+}
+
+/* Projects section styles */
+
+#project {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+#project-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.project-card {
+    width: 300px;
+    margin: auto 50px;
+}
+
+.project-card img {
+    height: 200px;
+    width: 300px;
+}
+
