@@ -14,6 +14,7 @@ h1, h2 {
 
 h1 {
     font-size: 2rem;
+    color: #328565;
 }
 
 h2 {
@@ -27,13 +28,15 @@ main {
 }
 
 footer {
-    position: relative;
-    top: 80px;
+    position: fixed;
+    bottom: 0px;
     height: 80px;
     width: 100%;
     display: block;
     align-content: center;
+    background-color: #021533;
 }
+
 
 /* Header styles */
 
@@ -140,3 +143,40 @@ header a:hover {
     width: 300px;
 }
 
+.project-card a {
+    color: #BFCCD9;
+}
+
+.project-card a:hover {
+    color: #934D85;
+}
+
+/* Skills section styles */
+
+#skills {
+    margin-bottom: 150px;
+}
+
+#skills #icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#skills i {
+    margin: 50px auto;
+}
+
+/* Contact styles */
+
+#contact-infos a {
+    color: #BFCCD9;
+}
+
+#contact-infos a:hover {
+    color: #934D85;
+}
+
+#contact-icons i {
+    margin: 20px;
+}
