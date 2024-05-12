@@ -7,6 +7,7 @@
         <link href="./resources/css/style.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Quattrocento&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/9e775003d5.js" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
     </head>
     <body>
         <header>
@@ -16,7 +17,9 @@
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li>
+                        <a href="#projects" ">Projects</a>
+                    </li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="./contact.html">Contact</a></li>
                 </ul>
@@ -32,117 +35,138 @@
             </section>
             <section id="projects">
                 <h2>My Projects</h2>
-                <div id="project-container">
-                    <div class="project-card">
-                        <img src="./resources/images/number-guesser.png"/>
-                        <div class="project-description">
-                            <p>Number Guesser <a href="https://marionmorel.github.io/codecademy-number-guesser/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></h3>
-                            <p>GitHub Repository <a href="https://github.com/marionmorel/codecademy-number-guesser" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
+                <div id="tabs">
+                    <a href="#html"><button class="tab-btn">HTML, CSS and JavaScript</button></a>
+                    <a href="#react"><button class="tab-btn">React</button></a>
+                    <a href="#p5"><button class="tab-btn">p5.js</button></a>
+                </div>
+                    <div class="category-title">
+                        <h3 id="html">HTML, CSS and JavaScript</h3>
+                    </div>
+                    <div class="project-container" id="html">
+                        <div class="project-card">
+                            <img src="./resources/images/number-guesser.png"/>
+                            <div class="project-description">
+                                <p>Number Guesser <a href="https://marionmorel.github.io/codecademy-number-guesser/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></h3>
+                                <p>GitHub Repository <a href="https://github.com/marionmorel/codecademy-number-guesser" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <img src="./resources/images/piano-player.png"/>
+                            <div class="project-description">
+                                <p>Piano Keys <a href="https://marionmorel.github.io/codecademy-piano-keys/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
+                                <p>Github Repository <a href="https://github.com/marionmorel/codecademy-piano-keys" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <img src="./resources/images/form-a-story.png"/>
+                            <div class="project-description">
+                                <p>Form A Story <a href="https://marionmorel.github.io/codecademy-form-a-story/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
+                                <p>GitHub Repository <a href="https://github.com/marionmorel/codecademy-form-a-story" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <img src="./resources/images/chore-door.png"/>
+                            <div class="project-description">
+                                <p>Chore Door | Game <a href="https://marionmorel.github.io/codecademy-chore-door/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
+                                <p>GitHub Repository <a href="https://github.com/marionmorel/codecademy-chore-door" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <img src="./resources/images/film-finder.png"/>
+                            <div class="project-description">
+                                <p>Film Finder <a href="https://marionmorel.github.io/codecademy-film-finder/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
+                                <p>GitHub Repository <a href="https://github.com/marionmorel/codecademy-film-finder" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <img src="./resources/images/fizzbuzz.png"/>
+                            <div class="project-description">
+                                <p>FizzBuzz <a href="https://marionmorel.github.io/fizzbuzz/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
+                                <p>GitHub Repository <a href="https://github.com/marionmorel/fizzbuzz" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
+                            </div>
                         </div>
                     </div>
-                    <div class="project-card">
-                        <img src="./resources/images/piano-player.png"/>
-                        <div class="project-description">
-                            <p>Piano Keys <a href="https://marionmorel.github.io/codecademy-piano-keys/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
-                            <p>Github Repository <a href="https://github.com/marionmorel/codecademy-piano-keys" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
+
+                    <div class="category-title">
+                        <h3 id="react">React</h3>
+                    </div>
+                    <div class="project-container" id="react">
+                        <div class="project-card">
+                            <img src="./resources/images/jammming.png"/>
+                            <div class="project-description">
+                                <p>Jammming | Spotify Playlist <a href="https://marionmrl-jammming.surge.sh/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
+                                <p>GitHub Repository <a href="https://github.com/marionmorel/codecademy-jammming" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <img src="./resources/images/adopt-a-pet.png"/>
+                            <div class="project-description">
+                                <p>Adopt A Pet! | React Router <a href="https://adopt-a-pet-marionmorel.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
+                                <p>GitHub Repository <a href="https://github.com/marionmorel/codecademy-adopt-a-pet" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <img src="./resources/images/appointment-planner.png"/>
+                            <div class="project-description">
+                                <p>Appointment Planner | React App <a href="https://appointment-planner-marionmorel.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
+                                <p>GitHub Repository <a href="https://github.com/marionmorel/codecademy-appointment-planner" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <img src="./resources/images/expense-tracker.png"/>
+                            <div class="project-description">
+                                <p>Expense Tracker | Redux Toolkit <a href="https://expensetracker-mamrl.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
+                                <p>GitHub Repository <a href="https://github.com/marionmorel/codecademy-expense-tracker" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <img src="./resources/images/flashcards.png"/>
+                            <div class="project-description">
+                                <p>Flashcards | React app <a href="https://flashcards-marionmorel.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
+                                <p>GitHub Repository <a href="https://github.com/marionmorel/codecademy-flashcards" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <img src="./resources/images/weather-app.png"/>
+                            <div class="project-description">
+                                <p>Weather App | Personal Project <a href="https://marionmorel.github.io/weather-app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
+                                <p>GitHub Repository <a href="https://github.com/marionmorel/weather-app" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <img src="./resources/images/affirmations-generator.png"/>
+                            <div class="project-description">
+                                <p>Affirmations Generator <a href="https://affirmation-generator-mamrl.netlify.app" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
+                                <p>GitHub Repository <a href="https://github.com/marionmorel/affirmation-generator" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <img src="./resources/images/to-do-list.png"/>
+                            <div class="project-description">
+                                <p>To-Do List <a href="https://marionmorel.github.io/to-do-list/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
+                                <p>GitHub Repository <a href="https://github.com/marionmorel/to-do-list" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
+                            </div>
                         </div>
                     </div>
-                    <div class="project-card">
-                        <img src="./resources/images/form-a-story.png"/>
-                        <div class="project-description">
-                            <p>Form A Story <a href="https://marionmorel.github.io/codecademy-form-a-story/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
-                            <p>GitHub Repository <a href="https://github.com/marionmorel/codecademy-form-a-story" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
-                        </div>
+
+                    <div class="category-title">
+                        <h3 id="p5">p5.js</h3>
                     </div>
-                    <div class="project-card">
-                        <img src="./resources/images/chore-door.png"/>
-                        <div class="project-description">
-                            <p>Chore Door | Game <a href="https://marionmorel.github.io/codecademy-chore-door/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
-                            <p>GitHub Repository <a href="https://github.com/marionmorel/codecademy-chore-door" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
+                    <div class="project-container" id="p5">
+                        <div class="project-card">
+                            <img src="./resources/images/soundboard.png"/>
+                            <div class="project-description">
+                                <p>Soundboard <a href="https://marionmorel.github.io/soundboard/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
+                                <p>GitHub Repository <a href="https://github.com/marionmorel/soundboard" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="./resources/images/film-finder.png"/>
-                        <div class="project-description">
-                            <p>Film Finder <a href="https://marionmorel.github.io/codecademy-film-finder/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
-                            <p>GitHub Repository <a href="https://github.com/marionmorel/codecademy-film-finder" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="./resources/images/jammming.png"/>
-                        <div class="project-description">
-                            <p>Jammming | Spotify Playlist <a href="https://marionmrl-jammming.surge.sh/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
-                            <p>GitHub Repository <a href="https://github.com/marionmorel/codecademy-jammming" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="./resources/images/adopt-a-pet.png"/>
-                        <div class="project-description">
-                            <p>Adopt A Pet! | React Router <a href="https://adopt-a-pet-marionmorel.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
-                            <p>GitHub Repository <a href="https://github.com/marionmorel/codecademy-adopt-a-pet" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="./resources/images/appointment-planner.png"/>
-                        <div class="project-description">
-                            <p>Appointment Planner | React App <a href="https://appointment-planner-marionmorel.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
-                            <p>GitHub Repository <a href="https://github.com/marionmorel/codecademy-appointment-planner" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="./resources/images/expense-tracker.png"/>
-                        <div class="project-description">
-                            <p>Expense Tracker | Redux Toolkit <a href="https://expensetracker-mamrl.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
-                            <p>GitHub Repository <a href="https://github.com/marionmorel/codecademy-expense-tracker" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="./resources/images/flashcards.png"/>
-                        <div class="project-description">
-                            <p>Flashcards | React app <a href="https://flashcards-marionmorel.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
-                            <p>GitHub Repository <a href="https://github.com/marionmorel/codecademy-flashcards" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="./resources/images/weather-app.png"/>
-                        <div class="project-description">
-                            <p>Weather App | Personal Project <a href="https://marionmorel.github.io/weather-app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
-                            <p>GitHub Repository <a href="https://github.com/marionmorel/weather-app" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="./resources/images/affirmations-generator.png"/>
-                        <div class="project-description">
-                            <p>Affirmations Generator <a href="https://affirmation-generator-mamrl.netlify.app" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
-                            <p>GitHub Repository <a href="https://github.com/marionmorel/affirmation-generator" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="./resources/images/to-do-list.png"/>
-                        <div class="project-description">
-                            <p>To-Do List <a href="https://marionmorel.github.io/to-do-list/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
-                            <p>GitHub Repository <a href="https://github.com/marionmorel/to-do-list" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="./resources/images/soundboard.png"/>
-                        <div class="project-description">
-                            <p>Soundboard <a href="https://marionmorel.github.io/soundboard/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
-                            <p>GitHub Repository <a href="https://github.com/marionmorel/soundboard" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="./resources/images/fizzbuzz.png"/>
-                        <div class="project-description">
-                            <p>FizzBuzz <a href="https://marionmorel.github.io/fizzbuzz/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
-                            <p>GitHub Repository <a href="https://github.com/marionmorel/fizzbuzz" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="./resources/images/art-creator.png"/>
-                        <div class="project-description">
-                            <p>Generative Art Creator | p5.js <a href="https://marionmorel.github.io/codecademy-generative-art-creator/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
-                            <p>GitHub Repository <a href="https://github.com/marionmorel/codecademy-generative-art-creator" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
+                        <div class="project-card">
+                            <img src="./resources/images/art-creator.png"/>
+                            <div class="project-description">
+                                <p>Generative Art Creator | p5.js <a href="https://marionmorel.github.io/codecademy-generative-art-creator/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
+                                <p>GitHub Repository <a href="https://github.com/marionmorel/codecademy-generative-art-creator" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></p>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -22,6 +22,10 @@ h2 {
     color: #85B6FF;
 }
 
+h3 {
+    color: #85B6FF;
+}
+
 main {
     position: relative;
     top: 70px;
@@ -117,6 +121,41 @@ header a:hover {
 }
 
 /* Projects section styles */
+#tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 60px;
+}
+
+.tab-btn {
+    border-radius: 15px;
+    height: 40px;
+    padding: 10px;
+    margin: 10px;    
+    align-content: center;
+    align-items: center;
+    background-color: #051e47;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: 'Quattrocento', serif;
+}
+
+.tab-btn:hover {
+    background-color: #0a3764;
+}
+
+.category-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: #051e47;
+    width: 85%;
+    margin: auto
+}
 
 #project {
     display: flex;
@@ -124,7 +163,7 @@ header a:hover {
     align-content: center;
 }
 
-#project-container {
+.project-container {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
