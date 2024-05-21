@@ -154,7 +154,17 @@ header a:hover {
     align-content: center;
     background-color: #051e47;
     width: 85%;
-    margin: auto
+    margin: 15px auto;
+    color: #85B6FF;
+}
+
+.category-title i {
+    margin-left: 15px;
+}
+
+.category-title i:hover {
+    cursor: pointer;
+    opacity: 0.5;
 }
 
 #project {
@@ -165,14 +175,13 @@ header a:hover {
 
 .project-container {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     align-content: center;
 }
 
 .project-card {
+    display: inline-block;
     width: 300px;
     margin: 50px 50px;
 }
@@ -190,6 +199,12 @@ header a:hover {
     color: #934D85;
 }
 
+#html,
+#react,
+#p5,
+#phaser {
+    visibility: "visible";
+}
 /* Skills section styles */
 
 #skills {

@@ -7,7 +7,7 @@
         <link href="./resources/css/style.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Quattrocento&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/9e775003d5.js" crossorigin="anonymous"></script>
-        <script src="script.js"></script>
+        <script src="index.js" type="text/javascript"></script>
     </head>
     <body>
         <header>
@@ -42,7 +42,10 @@
                     <a href="#phaser"><button class="tab-btn">Phaser</button></a>
                 </div>
                     <div class="category-title">
-                        <h3 id="html">HTML, CSS and JavaScript</h3>
+                        <h3>HTML, CSS and JavaScript</h3>
+                        
+                            <i id="html-arrow" class="fa-solid fa-angle-up" onclick="hideHTML()"></i>
+                        
                     </div>
                     <div class="project-container" id="html">
                         <div class="project-card">
@@ -97,7 +100,8 @@
                     </div>
 
                     <div class="category-title">
-                        <h3 id="react">React</h3>
+                        <h3>React</h3>
+                            <i id="react-arrow" class="fa-solid fa-angle-up" onclick="showReact()"></i>
                     </div>
                     <div class="project-container" id="react">
                         <div class="project-card">
@@ -166,7 +170,8 @@
                     </div>
 
                     <div class="category-title">
-                        <h3 id="p5">p5.js</h3>
+                        <h3>p5.js</h3>
+                        <i id="p5-arrow" class="fa-solid fa-angle-up" onclick="hideP5()"></i>
                     </div>
                     <div class="project-container" id="p5">
                         <div class="project-card">
@@ -185,7 +190,8 @@
                         </div>
                     </div>
                     <div class="category-title">
-                        <h3 id="phaser">Phaser</h3>
+                        <h3>Phaser</h3>
+                        <i id="phaser-arrow" class="fa-solid fa-angle-up" onclick="hidePhaser()"></i>
                     </div>
                     <div class="project-container" id="phaser">
                         <div class="project-card">
